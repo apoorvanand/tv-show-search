@@ -1,0 +1,10 @@
+.image-border{
+    border: 1px solid black;
+}
+
+#episodeName:hover{
+    cursor: pointer; cursor: hand;
+}
+body{
+	background-image: url(image.jpg);
+}

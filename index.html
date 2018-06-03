@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <title>Tv Show Search </title>
+    <link href="/css/styles.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.1/yeti/bootstrap.min.css" rel="stylesheet" integrity="sha384-yAYSLJjzniZh9Kau9E1v1ma5CzvyHF8fPK/xUpaRx1XTH9r60WxzDivvHG3xm6Hn" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+<link rel="shortcut icon" href="//cdn.perfmatters.io/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+      <div class="container jumbotron">
+          <h1 class="display-3">TV <i class="fas fa-tv"></i> Show Search </h1>
+          <form>
+              <div class="form-group">
+                <input type="text" class="form-control" id="showInput" placeholder="Search TV Show" required>
+                <button type="submit" class="btn btn-primary" id="submitButton">Search</button>
+              </div>
+          </form>
+
+          <div>
+            <table class="table table-light">
+              <thead id="tableHead ">
+                  <tr>
+                    <td>Name</td>
+                    <td>Network</td>
+                    <td>Type</td>
+                    <td>Image</td>
+                    <td>More Info</td>
+                  </tr>
+              </thead>           
+                  <tbody id="tableBody">
+
+                  </tbody>           
+            </table>
+
+            <table class="table table-light">
+                <thead>
+                    <tr>
+                      <td>Airdate</td>
+                      <td>Episode Name</td>
+                      <td>Episode Number</td>
+                      <td>Season</td>
+                      <td>Run Time</td>
+                      <td>Summary</td>
+                    </tr>
+                </thead>
+                <tbody id="episodeInfo">
+                    
+                </tbody>  
+              </table>
+          </div>
+        </div>
+
+  
+    
+        <script src="scripts/jquery-3.2.1.min.js"></script>
+        <!-- script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+        <script src="scripts/tvmaze.jquery.js"></script>
+        <script src="scripts/app.js"></script>
+  </body>
+</html>
